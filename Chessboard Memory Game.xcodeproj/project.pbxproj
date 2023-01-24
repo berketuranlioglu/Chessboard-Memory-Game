@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2C5B530B297F32DF007315C7 /* Chessboard_Memory_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B530A297F32DF007315C7 /* Chessboard_Memory_GameApp.swift */; };
-		2C5B530D297F32DF007315C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B530C297F32DF007315C7 /* ContentView.swift */; };
 		2C5B530F297F32E5007315C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B530E297F32E5007315C7 /* Assets.xcassets */; };
 		2C5B5312297F32E5007315C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B5311297F32E5007315C7 /* Preview Assets.xcassets */; };
+		2CF4BE76297FE08900F4440E /* ChessboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4BE75297FE08900F4440E /* ChessboardView.swift */; };
+		2CF4BE79297FEA5000F4440E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4BE78297FEA5000F4440E /* GameView.swift */; };
+		2CF4BE7B297FFA2A00F4440E /* CountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4BE7A297FFA2A00F4440E /* CountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C5B5307297F32DF007315C7 /* Chessboard Memory Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chessboard Memory Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5B530A297F32DF007315C7 /* Chessboard_Memory_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chessboard_Memory_GameApp.swift; sourceTree = "<group>"; };
-		2C5B530C297F32DF007315C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C5B530E297F32E5007315C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5B5311297F32E5007315C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CF4BE75297FE08900F4440E /* ChessboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardView.swift; sourceTree = "<group>"; };
+		2CF4BE77297FE46000F4440E /* Chessboard-Memory-Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Chessboard-Memory-Game-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2CF4BE78297FEA5000F4440E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		2CF4BE7A297FFA2A00F4440E /* CountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,9 @@
 		2C5B5309297F32DF007315C7 /* Chessboard Memory Game */ = {
 			isa = PBXGroup;
 			children = (
+				2CF4BE77297FE46000F4440E /* Chessboard-Memory-Game-Info.plist */,
+				2C5B5318297F5873007315C7 /* Views */,
 				2C5B530A297F32DF007315C7 /* Chessboard_Memory_GameApp.swift */,
-				2C5B530C297F32DF007315C7 /* ContentView.swift */,
 				2C5B530E297F32E5007315C7 /* Assets.xcassets */,
 				2C5B5310297F32E5007315C7 /* Preview Content */,
 			);
@@ -65,6 +71,16 @@
 				2C5B5311297F32E5007315C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C5B5318297F5873007315C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4BE75297FE08900F4440E /* ChessboardView.swift */,
+				2CF4BE78297FEA5000F4440E /* GameView.swift */,
+				2CF4BE7A297FFA2A00F4440E /* CountView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5B530D297F32DF007315C7 /* ContentView.swift in Sources */,
+				2CF4BE76297FE08900F4440E /* ChessboardView.swift in Sources */,
+				2CF4BE79297FEA5000F4440E /* GameView.swift in Sources */,
+				2CF4BE7B297FFA2A00F4440E /* CountView.swift in Sources */,
 				2C5B530B297F32DF007315C7 /* Chessboard_Memory_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +287,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chessboard Memory Game/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Chessboard-Memory-Game-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chessboard Memory Game/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Chessboard-Memory-Game-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
